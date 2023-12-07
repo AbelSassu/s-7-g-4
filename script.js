@@ -37,6 +37,12 @@ function loadImages(query) {
   document.getElementById('loadSecondaryImagesBtn').addEventListener('click', function() {
     loadImages('your-secondary-query');
   });
+  document.getElementById('searchButton').addEventListener('click', function() {
+    const searchInputValue = document.getElementById('searchInput').value;
+    if (searchInputValue.trim() !== '') {
+      loadImages(searchInputValue);
+    }
+  });
 
   function hideCard(card) {
     if (card) {

@@ -112,19 +112,24 @@
   </header>
 
   <main role="main">
-    <section class="jumbotron text-center">
+    <div class="jumbotron text-center">
       <div class="container">
         <h1 class="jumbotron-heading">Album API example</h1>
         <p class="lead text-muted">
-          This page will dynamically load pictures from the web, and display
-          them in a cool way!
+          This page will dynamically load pictures from the web, and display them in a cool way!
         </p>
+        <div class="input-group mb-3">
+          <input type="text" class="form-control" placeholder="Search for images..." id="searchInput">
+          <div class="input-group-append">
+            <button class="btn btn-outline-secondary" type="button" id="searchButton">Search</button>
+          </div>
+        </div>
         <p>
           <a href="#" class="btn btn-primary my-2" id="loadImagesBtn">Load Images</a>
           <a href="#" class="btn btn-secondary my-2" id="loadSecondaryImagesBtn">Load Secondary Images</a>
         </p>
       </div>
-    </section>
+    </div>
     <div class="album py-5 bg-light">
       <div class="container">
         <div class="row">          
