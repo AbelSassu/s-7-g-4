@@ -68,11 +68,4 @@ function createCard(data, cardId, imageId, imageUrl) {
     `;
     return card;
   }
-    const cardContainer = document.querySelector(".album .container .row");
-    cardData.forEach((data, index) => {
-        const cardId = `card${index + 1}`;
-        const imageId = `image${index + 1}`
-        const cardElement = createCard(data, cardId, imageId);
-        cardContainer.appendChild(cardElement);
-    });
-  ;
+
