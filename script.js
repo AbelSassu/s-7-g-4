@@ -33,8 +33,6 @@ function loadImages(query, page = 1) {
 
 document.addEventListener('DOMContentLoaded', function () {
     loadImages('people');
-
-
     document.getElementById('loadImagesBtn').addEventListener('click', function () {
 
         currentPage++;
